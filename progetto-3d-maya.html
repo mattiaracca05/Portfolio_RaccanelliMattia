@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SETPOINTSTUDIO 3D per catalogo – Mattia Raccanelli</title>
+<meta name="description" content="Case study di SETPOINTSTUDIO 3D per catalogo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Instrument+Serif:ital@1&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="curtain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"><i>View</i></div>
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <nav class="flex items-center justify-between px-6 py-5 text-xs md:px-10" aria-label="Principale">
+    <a href="index.html" class="font-medium">Mattia Raccanelli</a>
+    <ul class="hidden gap-12 text-white/70 md:flex">
+      <li><a class="link-u hover:text-white" href="index.html#work">Work</a></li>
+      <li><a class="link-u hover:text-white" href="about.html">About</a></li>
+      <li><a class="link-u hover:text-white" href="contact.html">Contact</a></li>
+    </ul>
+    <button id="menu-btn" class="md:hidden" aria-expanded="false">Menu</button>
+  </nav>
+  <div id="mobile-menu" class="hidden px-6 pb-6 text-2xl font-display md:hidden"><a class="block py-2" href="index.html#work">Work</a><a class="block py-2" href="about.html">About</a><a class="block py-2" href="contact.html">Contact</a></div>
+</header>
+<main>
+<section class="px-6 pb-16 pt-40 md:px-10 md:pt-52">
+  <h1 class="font-display hero-t">
+    <span class="line"><span>SETPOINTSTUDIO</span></span>
+    <span class="line"><span><em class="serif">3D</em> per catalogo</span></span>
+  </h1>
+  <div class="mt-12 flex flex-wrap gap-2">
+    <span class="pill" style="background:var(--red);color:#fff">3D visualization</span>
+    <span class="pill-w">Maya</span>
+    <span class="pill-w">Lighting</span><span class="pill-w">Texturing</span><span class="pill-w">Catalog</span>
+  </div>
+</section>
+
+<section class="px-4 md:px-10">
+  <div class="aspect-[16/9] overflow-hidden rounded-[2rem]" style="background:var(--red)"><img data-speed=".06" class="h-full w-full object-cover" src="assets/images/Render_scuro_Antoni.jpg" alt="Render finale 3D catalogo"></div>
+</section>
+
+<section class="grid gap-10 px-6 py-36 md:grid-cols-12 md:px-10">
+  <h2 class="font-display text-4xl md:col-span-4 md:text-5xl">Brief &amp; <em class="serif">concept</em></h2>
+  <div class="reveal space-y-6 text-lg font-light leading-relaxed text-white/70 md:col-span-6 md:col-start-6">
+    <p>Sviluppo di modelli tridimensionali ad alta precisione e render ambientati per l’aggiornamento del catalogo commerciale di un’azienda produttrice di serramenti. L’obiettivo era riprodurre fedelmente due tipologie costruttive cardine della tradizione e dell’architettura: lo scuro alla Padovana e l’Antone classico, fornendo render fotorealistici per mostrare i prodotti integrati su facciate residenziali.</p>
+  </div>
+</section>
+
+<section class="grid gap-10 px-6 py-20 md:grid-cols-12 md:px-10">
+  <h2 class="font-display text-4xl md:col-span-4 md:text-5xl">What I <em class="serif">did</em></h2>
+  <div class="reveal space-y-5 text-lg font-light leading-relaxed text-white/70 md:col-span-6 md:col-start-6">
+    <p><strong class="font-medium text-white">Processo Tecnico &amp; Modellazione (Maya)</strong></p>
+    <p><strong class="font-medium text-white">Analisi dei Riferimenti Costruttivi:</strong><br>Studio delle fotografie fornite dal committente per rispettare spessori delle doghe, proporzioni, fughe e i dettagli meccanici specifici dei due sistemi (cerniere snodate, bandelle, cardini e spagnolette di chiusura).</p>
+    <p><strong class="font-medium text-white">Hard Surface Modeling:</strong><br>Ricostruzione geometrica da zero con topologia poligonale pulita, prestando massima attenzione al meccanismo di snodo delle ante per la Padovana e alla modularità delle doghe per gli Antoni.</p>
+    <p><strong class="font-medium text-white">3D Modeling da Zero:</strong><br>Modellazione 3D dettagliata dei modelli Antone e Padovana in Autodesk Maya.</p>
+    <p><strong class="font-medium text-white">Materiali &amp; Shading:</strong><br>Impostazione di shader realistici per riprodurre le finiture superficiali.</p>
+    <p><strong class="font-medium text-white">Set Dressing &amp; Illuminazione:</strong><br>Allestimento del contesto architettonico esterno (pareti, soglie in pietra, serramenti) con studio dell’illuminazione solare naturale per esaltare i volumi, le ombre di battuta e la profondità dei tagli.</p>
+  </div>
+</section>
+
+<section class="space-y-4 px-4 pb-32 md:space-y-8 md:px-10">
+  <div class="reveal aspect-[16/9] overflow-hidden rounded-[2rem] bg-neutral-900"><img data-speed=".05" class="h-full w-full object-cover object-center" src="assets/images/Render_scuro_Padovana.jpg" alt="Catalogo 3D principale"></div>
+  <div class="grid gap-4 md:grid-cols-2 md:gap-8">
+    <div class="reveal aspect-[4/5] overflow-hidden rounded-[2rem] bg-neutral-900"><img class="h-full w-full object-cover object-center" src="assets/images/Render_scuro_Padovana2.png" alt="Dettaglio 1" loading="lazy"></div>
+    <div class="reveal aspect-[4/5] overflow-hidden rounded-[2rem] bg-neutral-900 md:mt-24"><img class="h-full w-full object-cover object-center" src="assets/images/Render_scuro_Antoni2.png" alt="Dettaglio 2" loading="lazy"></div>
+  </div>
+
+  <div class="cmp aspect-[16/9] bg-neutral-900" role="group" aria-label="Confronto render e dettagli">
+    <img class="absolute inset-0 h-full w-full object-cover object-center" src="assets/images/Render_scuro_Padovana.jpg" alt="Render finale">
+    <div class="top"><img class="h-full w-full object-cover object-center" src="assets/images/Render_scuro_Padovana3.png" alt="Wireframe"></div>
+    <span class="pill-w absolute bottom-4 left-4">Viewport</span><span class="pill-w absolute bottom-4 right-4">Render</span>
+    <div class="bar"></div><input type="range" min="0" max="100" value="50" aria-label="Sposta il confronto">
+  </div>
+  <p class="px-2 pt-4 text-center text-sm text-white/60 md:px-0">Muovi la barra centrale per vedere il confronto prima e dopo.</p>
+</section>
+
+<nav class="border-t border-white/10" aria-label="Altri progetti">
+  <a href="progetto-advertising.html" class="group block px-6 py-24 md:px-10" data-cursor>
+    <p class="text-xs text-white/50">Progetto successivo</p>
+    <p class="font-display mt-4 text-[clamp(2.2rem,8vw,7rem)] leading-none transition-transform duration-700 group-hover:translate-x-4">Mojito, vino e profumo</p>
+  </a>
+  <a href="progetto-stranger-things.html" class="link-u mx-6 mb-16 inline-block text-sm text-white/60 hover:text-white md:mx-10">Progetto precedente: Stranger Things</a>
+</nav>
+</main>
+<footer class="px-6 pb-10 pt-32 md:px-10">
+  <p class="text-sm text-white/50">Disponibile per nuove opportunità</p>
+  <a href="mailto:tuaemail@example.com" class="font-display mt-4 block text-[clamp(2rem,8vw,7.5rem)] leading-none transition-opacity hover:opacity-60" data-cursor>Let’s talk</a>
+  <div class="mt-20 flex flex-wrap justify-between gap-6 text-xs text-white/50">
+    <p>© <span id="year"></span> Mattia Raccanelli</p>
+    <ul class="flex gap-8"><li><a class="link-u hover:text-white" href="https://www.linkedin.com/in/TUO-PROFILO" target="_blank" rel="noopener">LinkedIn</a></li><li><a class="link-u hover:text-white" href="https://www.behance.net/TUO-PROFILO" target="_blank" rel="noopener">Behance</a></li><li><a class="link-u hover:text-white" href="mailto:tuaemail@example.com">Email</a></li></ul>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

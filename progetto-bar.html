@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bar itinerante – Mattia Raccanelli</title>
+<meta name="description" content="Case study del progetto Bar itinerante.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Instrument+Serif:ital@1&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="curtain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"><i>View</i></div>
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <nav class="flex items-center justify-between px-6 py-5 text-xs md:px-10" aria-label="Principale">
+    <a href="index.html" class="font-medium">Mattia Raccanelli</a>
+    <ul class="hidden gap-12 text-white/70 md:flex">
+      <li><a class="link-u hover:text-white" href="index.html#work">Work</a></li>
+      <li><a class="link-u hover:text-white" href="about.html">About</a></li>
+      <li><a class="link-u hover:text-white" href="contact.html">Contact</a></li>
+    </ul>
+    <button id="menu-btn" class="md:hidden" aria-expanded="false">Menu</button>
+  </nav>
+  <div id="mobile-menu" class="hidden px-6 pb-6 text-2xl font-display md:hidden"><a class="block py-2" href="index.html#work">Work</a><a class="block py-2" href="about.html">About</a><a class="block py-2" href="contact.html">Contact</a></div>
+</header>
+<main>
+<section class="px-6 pb-16 pt-40 md:px-10 md:pt-52">
+  <h1 class="font-display hero-t">
+    <span class="line"><span>Bar</span></span>
+    <span class="line"><span><em class="serif">itinerante</em></span></span>
+  </h1>
+  <div class="mt-12 flex flex-wrap gap-2">
+    <span class="pill" style="background:var(--violet);color:#fff">Brand identity</span>
+    <span class="pill-w">Visual identity</span>
+    <span class="pill-w">Packaging</span><span class="pill-w">Art direction</span><span class="pill-w">Social</span>
+  </div>
+</section>
+
+<section class="px-4 md:px-10">
+  <div class="aspect-[16/9] overflow-hidden rounded-[2rem]" style="background:var(--violet)"><img data-speed=".06" class="h-full w-full object-cover" src="assets/images/Bar_itinerante2.png" alt="Bar itinerante - immagine principale"></div>
+</section>
+
+<section class="grid gap-10 px-6 py-36 md:grid-cols-12 md:px-10">
+  <h2 class="font-display text-4xl md:col-span-4 md:text-5xl">Brief &amp; <em class="serif">concept</em></h2>
+  <div class="reveal space-y-6 text-lg font-light leading-relaxed text-white/70 md:col-span-6 md:col-start-6">
+    <p>Delibare nasce da una <span style="color:var(--violet)">necessità</span> e da un sogno: istruire le persone sul “bere bene” e far loro scoprire posti segreti delle città.</p>
+    <p>La struttura del bar sarà itinerante, per cui si sposterà ogni volta in una location diversa. Raggiungibile tramite Google Maps, i follower potranno vedere la localizzazione solamente dopo il post social creato.</p>
+  </div>
+</section>
+
+<section class="grid gap-10 px-6 py-20 md:grid-cols-12 md:px-10">
+  <h2 class="font-display text-4xl md:col-span-4 md:text-5xl">What I <em class="serif">did</em></h2>
+  <div class="reveal space-y-5 text-lg font-light leading-relaxed text-white/70 md:col-span-6 md:col-start-6">
+    <p><strong class="font-medium text-white">Brand Identity &amp; Logotipo:</strong><br>Progettazione del logo vettoriale (Illustrator), studio della palette cromatica e del sistema visivo ispirato ai paesaggi alpini e all’atmosfera après-ski/outdoor.</p>
+    <p><strong class="font-medium text-white">Location Scouting &amp; Mapping:</strong><br>Selezione strategica dei 3 punti di sosta a Courmayeur per intercettare il target nei momenti chiave della giornata.</p>
+    <p><strong class="font-medium text-white">Social Media &amp; Gamification:</strong><br>Progettazione dei post promozionali per Instagram con integrazione di un QR code interattivo, pensato per permettere agli utenti di scoprire e geolocalizzare la posizione del truck in tempo reale.</p>
+    <p><strong class="font-medium text-white">Brand Applications &amp; Mock-up:</strong><br>Applicazione della grafica sulla livrea del veicolo itinerante e sui supporti di comunicazione (Photoshop).</p>
+  </div>
+</section>
+
+<section class="space-y-4 px-4 pb-32 md:space-y-8 md:px-10">
+  <div class="reveal overflow-hidden rounded-[2rem] bg-white">
+    <div class="aspect-[16/9] w-full">
+      <img data-speed=".05" class="h-full w-full object-contain p-4 md:p-8" src="assets/images/Spiegazione_logo_bar.png" alt="Concept visual bar itinerante">
+    </div>
+  </div>
+  <div class="grid gap-4 md:grid-cols-2 md:gap-8">
+    <div class="reveal aspect-[16/9] overflow-hidden rounded-[2rem] bg-neutral-900"><img class="h-full w-full object-cover" src="assets/images/mockup_bar.png" alt="Dettaglio 1" loading="lazy"></div>
+    <div class="reveal aspect-[16/9] overflow-hidden rounded-[2rem] bg-neutral-900 md:mt-12"><img class="h-full w-full object-cover" src="assets/images/post_instagaram_bar.png" alt="Dettaglio 2" loading="lazy"></div>
+  </div>
+</section>
+
+<nav class="border-t border-white/10" aria-label="Altri progetti">
+  <a href="progetto-packaging.html" class="group block px-6 py-24 md:px-10" data-cursor>
+    <p class="text-xs text-white/50">Progetto successivo</p>
+    <p class="font-display mt-4 text-[clamp(2.2rem,8vw,7rem)] leading-none transition-transform duration-700 group-hover:translate-x-4">Acque aromatizzate</p>
+  </a>
+  <a href="progetto-advertising.html" class="link-u mx-6 mb-16 inline-block text-sm text-white/60 hover:text-white md:mx-10">Progetto precedente: Mojito, vino e profumo</a>
+</nav>
+</main>
+<footer class="px-6 pb-10 pt-32 md:px-10">
+  <p class="text-sm text-white/50">Disponibile per nuove opportunità</p>
+  <a href="mailto:tuaemail@example.com" class="font-display mt-4 block text-[clamp(2rem,8vw,7.5rem)] leading-none transition-opacity hover:opacity-60" data-cursor>Let’s talk</a>
+  <div class="mt-20 flex flex-wrap justify-between gap-6 text-xs text-white/50">
+    <p>© <span id="year"></span> Mattia Raccanelli</p>
+    <ul class="flex gap-8"><li><a class="link-u hover:text-white" href="https://www.linkedin.com/in/TUO-PROFILO" target="_blank" rel="noopener">LinkedIn</a></li><li><a class="link-u hover:text-white" href="https://www.behance.net/TUO-PROFILO" target="_blank" rel="noopener">Behance</a></li><li><a class="link-u hover:text-white" href="mailto:tuaemail@example.com">Email</a></li></ul>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
