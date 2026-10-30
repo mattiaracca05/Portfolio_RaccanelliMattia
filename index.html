@@ -1,28 +1,116 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=./portfolio-mattia/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Mattia Raccanelli</title>
-    <style>
-      html, body {
-        margin: 0;
-        height: 100%;
-        background: #121214;
-        color: #e9e8e4;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      body {
-        display: grid;
-        place-items: center;
-      }
-      a {
-        color: #e9e8e4;
-      }
-    </style>
-  </head>
-  <body>
-    <p>Reindirizzamento al portfolio… <a href="./portfolio-mattia/">clicca qui</a></p>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mattia Raccanelli – Junior Visual & Motion Designer</title>
+<meta name="description" content="Portfolio: branding, packaging, compositing e 3D.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Instrument+Serif:ital@1&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="curtain" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"><i>View</i></div>
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+  <nav class="flex items-center justify-between px-6 py-5 text-xs md:px-10" aria-label="Principale">
+    <a href="index.html" class="font-medium">Mattia Raccanelli</a>
+    <ul class="hidden gap-12 text-white/70 md:flex">
+      <li><a class="link-u hover:text-white" href="index.html#work">Work</a></li>
+      <li><a class="link-u hover:text-white" href="about.html">About</a></li>
+      <li><a class="link-u hover:text-white" href="contact.html">Contact</a></li>
+    </ul>
+    <button id="menu-btn" class="md:hidden" aria-expanded="false">Menu</button>
+  </nav>
+  <div id="mobile-menu" class="hidden px-6 pb-6 text-2xl font-display md:hidden"><a class="block py-2" href="index.html#work">Work</a><a class="block py-2" href="about.html">About</a><a class="block py-2" href="contact.html">Contact</a></div>
+</header>
+<main>
+<section class="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 pt-28 md:px-10">
+  <p class="mb-6 text-xs text-white/60">Mattia Raccanelli · Junior · 3D generalist</p>
+  <h1 class="font-display hero-t">
+    <span class="line"><span>Visual &amp;</span></span>
+    <span class="line"><span><em class="serif">Motion</em> Designer</span></span>
+  </h1>
+  <span class="pill absolute right-[8%] top-[34%] -rotate-6" style="background:var(--green)" data-depth="40">Packaging</span>
+  <span class="pill absolute left-[6%] top-[62%] rotate-3 text-white" style="background:var(--red)" data-depth="-30">Branding</span>
+  <span class="pill absolute right-[14%] bottom-[16%] rotate-6 text-white" style="background:var(--violet)" data-depth="50">3D &amp; Compositing</span>
+  <p class="mt-10 max-w-sm text-sm leading-relaxed text-white/60">Identità di marca, packaging, key visual e render 3D per studi, agenzie e brand.</p>
+</section>
+
+<section class="px-4 md:px-10">
+  <div class="relative mx-auto aspect-video max-w-[1500px] origin-center overflow-hidden rounded-[2rem] bg-neutral-900" data-grow>
+    <video id="showreel" class="h-full w-full object-cover" autoplay muted loop playsinline poster="assets/images_compresse/showreel-poster.jpg"><source src="assets/video/showreel.mp4" type="video/mp4"></video>
+    <button id="play-btn" class="absolute inset-0 m-auto grid h-20 w-20 place-items-center rounded-full bg-white/15 backdrop-blur-md transition hover:scale-110" aria-label="Riproduci showreel con audio"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
+    <span class="pill-w absolute bottom-5 left-5">Showreel 2024–2025</span>
+  </div>
+</section>
+
+<section class="grid items-center gap-10 px-6 py-40 md:grid-cols-2 md:px-10">
+  <p class="max-w-xs text-sm leading-relaxed text-white/70">Progetto <span style="color:var(--red)">identità, packaging e immagini pubblicitarie</span> che funzionano sullo scaffale e sullo schermo, dal concept al render finale.</p>
+  <div id="fan" class="relative mx-auto h-[70vw] max-h-[560px] w-full max-w-[340px]">
+    <div class="absolute inset-0 m-auto h-[85%] w-[70%] overflow-hidden rounded-3xl" style="background:var(--green)"><img class="h-full w-full object-cover" src="assets/images_compresse/Advertaising_Bottiglia_di_vino.png" alt="Packaging work"></div>
+    <div class="absolute inset-0 m-auto h-[85%] w-[70%] overflow-hidden rounded-3xl" style="background:var(--violet)"><img class="h-full w-full object-cover" src="assets/images_compresse/Render_scuro_Padovana.jpg" alt="Bar itinerante work"></div>
+    <div class="absolute inset-0 m-auto h-[85%] w-[70%] overflow-hidden rounded-3xl" style="background:var(--red)"><img class="h-full w-full object-cover" src="assets/images_compresse/Advertaising_Mojito_bottle.png" alt="Advertising work"></div>
+  </div>
+</section>
+
+<section id="work" class="px-6 pb-32 md:px-10">
+  <div class="sticky top-20 z-10 flex h-0 justify-end"><span class="work-t font-display pointer-events-none" data-t="Work">Work</span></div>
+  <p class="mb-16 text-xs text-white/50">Feat works (5)</p>
+  <div class="grid gap-x-8 gap-y-24 md:grid-cols-2">
+    <div class="space-y-24">
+      <a href="progetto-bar.html" class="card reveal block" data-cursor>
+        <div class="relative overflow-hidden rounded-3xl aspect-[4/5]" style="background:#4a3cff">
+          <img class="card-img absolute inset-0 h-full w-full object-cover" src="assets/images_compresse/Bar_itinerante.png" alt="Bar itinerante" loading="lazy">
+          <div class="absolute bottom-4 left-4 flex items-center gap-2"><span class="pill-w">Bar itinerante</span><span class="arrow-c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+        </div>
+        <p class="mt-3 text-xs text-white/50">Brand identity</p>
+      </a>
+      <a href="progetto-advertising.html" class="card reveal block" data-cursor>
+        <div class="relative overflow-hidden rounded-3xl aspect-[4/3]" style="background:#ff4d2e">
+          <img class="card-img absolute inset-0 h-full w-full object-cover" src="assets/images_compresse/Advertaising_Mojito_bottle.png" alt="Key visual" loading="lazy">
+          <div class="absolute bottom-4 left-4 flex items-center gap-2"><span class="pill-w">Mojito, vino e profumo</span><span class="arrow-c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+        </div>
+        <p class="mt-3 text-xs text-white/50">Advertising compositing</p>
+      </a>
+      <a href="progetto-stranger-things.html" class="card reveal block" data-cursor>
+        <div class="relative overflow-hidden rounded-3xl aspect-[4/5]" style="background:#2a2a30">
+          <img class="card-img absolute inset-0 h-full w-full object-cover" src="assets/images_compresse/mockup_cofanetto_finito.png" alt="Cofanetto" loading="lazy">
+          <div class="absolute bottom-4 left-4 flex items-center gap-2"><span class="pill-w">Stranger Things, 10° anniversario</span><span class="arrow-c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+        </div>
+        <p class="mt-3 text-xs text-white/50">Editorial & entertainment</p>
+      </a>
+    </div>
+    <div class="space-y-24 md:pt-48">
+      <a href="progetto-packaging.html" class="card reveal block" data-cursor>
+        <div class="relative overflow-hidden rounded-3xl aspect-[3/4]" style="background:#3ddc3a">
+          <img class="card-img absolute inset-0 h-full w-full object-cover" src="assets/images_compresse/applicazione design fruvy2.png" alt="Fruvy packaging" loading="lazy">
+          <div class="absolute bottom-4 left-4 flex items-center gap-2"><span class="pill-w">Fruvy</span><span class="arrow-c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+        </div>
+        <p class="mt-3 text-xs text-white/50">Packaging</p>
+      </a>
+      <a href="progetto-3d-maya.html" class="card reveal block" data-cursor>
+        <div class="relative overflow-hidden rounded-3xl aspect-[4/3]" style="background:#2a2a30">
+          <img class="card-img absolute inset-0 h-full w-full object-cover" src="assets/images_compresse/Render_scuro_Antoni.jpg" alt="Catalogo 3D" loading="lazy">
+          <div class="absolute bottom-4 left-4 flex items-center gap-2"><span class="pill-w">SETPOINTSTUDIO, 3D per catalogo</span><span class="arrow-c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M8 7h9v9"/></svg></span></div>
+        </div>
+        <p class="mt-3 text-xs text-white/50">3D visualization</p>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="px-6 pb-10 pt-32 md:px-10">
+  <p class="text-sm text-white/50">Disponibile per nuove opportunità</p>
+  <a href="mailto:tuaemail@example.com" class="font-display mt-4 block text-[clamp(2rem,8vw,7.5rem)] leading-none transition-opacity hover:opacity-60" data-cursor>Let’s talk</a>
+  <div class="mt-20 flex flex-wrap justify-between gap-6 text-xs text-white/50">
+    <p>© <span id="year"></span> Mattia Raccanelli</p>
+    <ul class="flex gap-8"><li><a class="link-u hover:text-white" href="https://www.linkedin.com/in/TUO-PROFILO" target="_blank" rel="noopener">LinkedIn</a></li><li><a class="link-u hover:text-white" href="https://www.behance.net/TUO-PROFILO" target="_blank" rel="noopener">Behance</a></li><li><a class="link-u hover:text-white" href="mailto:tuaemail@example.com">Email</a></li></ul>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
